@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <script src="./JS/index.js" defer></script>
+    <script src="./JS/usedCars.js" defer></script>
+    <title>Used Car Dealership Practice Site</title>
+  </head>
+  <body>
+    <main>
+      <h2>Used Car Dealership</h2>
+      <div class="btn-container">
+        <h3>Filter Options</h3>
+        <div class="year">
+          <div class="min">
+            <p>Minimum Year</p>
+            <div class="btnYear">
+              <input type="radio" name="year" id="min-year-2014" value="2014" />
+              <label for="2014">2014</label>
+              <input type="radio" name="year" id="min-year-2015" value="2015" />
+              <label for="2015">2015</label>
+              <input type="radio" name="year" id="min-year2016" value="2016" />
+              <label for="2016">2016</label>
+              <input type="radio" name="year" id="min-year-2017" value="2017" />
+              <label for="2017">2017</label>
+              <input type="radio" name="year" id="min-year-2018" value="2018" />
+              <label for="2018">2018</label>
+              <input type="radio" name="year" id="min-year-2019" value="2019" />
+              <label for="2019">2019</label>
+              <input type="radio" name="year" id="min-year-2020" value="2020" />
+              <label for="2020">2020</label>
+            </div>
+          </div>
+          <div class="max">
+            <p>Maximum Year</p>
+            <div class="btnYear">
+              <input type="radio" name="year" id="max-year-2014" value="2014" />
+              <label for="2014">2014</label>
+              <input type="radio" name="year" id="max-year-2015" value="2015" />
+              <label for="2015">2015</label>
+              <input type="radio" name="year" id="max-year2016" value="2016" />
+              <label for="2016">2016</label>
+              <input type="radio" name="year" id="max-year-2017" value="2017" />
+              <label for="2017">2017</label>
+              <input type="radio" name="year" id="max-year-2018" value="2018" />
+              <label for="2018">2018</label>
+              <input type="radio" name="year" id="max-year-2019" value="2019" />
+              <label for="2019">2019</label>
+              <input type="radio" name="year" id="max-year-2020" value="2020" />
+              <label for="2020">2020</label>
+            </div>
+          </div>
+        </div>
+        <p>Car Make</p>
+        <div class="make">
+          <input type="radio" name="make" id="car-make-toyota" value="Toyota" />
+          <label for="car-make-toyota">Toyota</label>
+
+          <input type="radio" name="make" id="car-make-honda" value="Honda" />
+          <label for="car-make-honda">Honda</label>
+
+          <input type="radio" name="make" id="car-make-ford" value="Ford" />
+          <label for="car-make-ford">Ford</label>
+
+          <input type="radio" name="make" id="car-make-nissan" value="Nissan" />
+          <label for="car-make-nissan">Nissan</label>
+
+          <input
+            type="radio"
+            name="make"
+            id="car-make-chevrolet"
+            value="Chevrolet"
+          />
+          <label for="car-make-chevrolet">Chevrolet</label>
+
+          <input
+            type="radio"
+            name="make"
+            id="car-make-volkswagen"
+            value="Volkswagen"
+          />
+          <label for="car-make-volkswagen">Volkswagen</label>
+
+          <input
+            type="radio"
+            name="make"
+            id="car-make-hyundai"
+            value="Hyundai"
+          />
+          <label for="car-make-hyundai">Hyundai</label>
+
+          <input type="radio" name="make" id="car-make-subaru" value="Subaru" />
+          <label for="car-make-subaru">Subaru</label>
+
+          <input type="radio" name="make" id="car-make-mazda" value="Mazda" />
+          <label for="car-make-mazda">Mazda</label>
+
+          <input type="radio" name="make" id="car-make-kia" value="Kia" />
+          <label for="car-make-kia">Kia</label>
+
+          <input type="radio" name="make" id="car-make-dodge" value="Dodge" />
+          <label for="car-make-dodge">Dodge</label>
+
+          <input
+            type="radio"
+            name="make"
+            id="car-make-cadillac"
+            value="Cadillac"
+          />
+          <label for="car-make-cadillac">Cadillac</label>
+
+          <input type="radio" name="make" id="car-make-jaguar" value="Jaguar" />
+          <label for="car-make-jaguar">Jaguar</label>
+
+          <input type="radio" name="make" id="car-make-tesla" value="Tesla" />
+          <label for="car-make-tesla">Tesla</label>
+
+          <input
+            type="radio"
+            name="make"
+            id="car-make-porsche"
+            value="Porsche"
+          />
+          <label for="car-make-porsche">Porsche</label>
+
+          <input type="radio" name="make" id="car-make-lexus" value="Lexus" />
+          <label for="car-make-lexus">Lexus</label>
+
+          <input type="radio" name="make" id="car-make-bmw" value="BMW" />
+          <label for="car-make-bmw">BMW</label>
+        </div>
+        <p>Maximum Mileage</p>
+        <div class="mileage">
+          <input
+            type="radio"
+            name="max-mileage"
+            id="mileage-22000"
+            value="22000"
+          />
+          <label for="mileage-22000">22000</label>
+
+          <input
+            type="radio"
+            name="max-mileage"
+            id="mileage-23000"
+            value="23000"
+          />
+          <label for="mileage-23000">23000</label>
+
+          <input
+            type="radio"
+            name="max-mileage"
+            id="mileage-24000"
+            value="24000"
+          />
+          <label for="mileage-24000">24000</label>
+
+          <input
+            type="radio"
+            name="max-mileage"
+            id="mileage-25000"
+            value="25000"
+          />
+          <label for="mileage-25000">25000</label>
+
+          <input
+            type="radio"
+            name="max-mileage"
+            id="mileage-26000"
+            value="26000"
+          />
+          <label for="mileage-26000">26000</label>
+
+          <input
+            type="radio"
+            name="max-mileage"
+            id="mileage-27000"
+            value="27000"
+          />
+          <label for="mileage-27000">27000</label>
+
+          <input
+            type="radio"
+            name="max-mileage"
+            id="mileage-28000"
+            value="28000"
+          />
+          <label for="mileage-28000">28000</label>
+
+          <input
+            type="radio"
+            name="max-mileage"
+            id="mileage-29000"
+            value="29000"
+          />
+          <label for="mileage-29000">29000</label>
+
+          <input
+            type="radio"
+            name="max-mileage"
+            id="mileage-30000"
+            value="30000"
+          />
+          <label for="mileage-30000">30000</label>
+
+          <input
+            type="radio"
+            name="max-mileage"
+            id="mileage-31000"
+            value="31000"
+          />
+          <label for="mileage-31000">31000</label>
+
+          <input
+            type="radio"
+            name="max-mileage"
+            id="mileage-32000"
+            value="32000"
+          />
+          <label for="mileage-32000">32000</label>
+        </div>
+        <p>Maximum Price</p>
+        <div class="price">
+          <input type="radio" name="price" id="price-24000" value="24000" />
+          <label for="price-24000">24000</label>
+
+          <input type="radio" name="price" id="price-25000" value="25000" />
+          <label for="price-25000">25000</label>
+
+          <input type="radio" name="price" id="price-26000" value="26000" />
+          <label for="price-26000">26000</label>
+
+          <input type="radio" name="price" id="price-27000" value="27000" />
+          <label for="price-27000">27000</label>
+
+          <input type="radio" name="price" id="price-28000" value="28000" />
+          <label for="price-28000">28000</label>
+
+          <input type="radio" name="price" id="price-29000" value="29000" />
+          <label for="price-29000">29000</label>
+
+          <input type="radio" name="price" id="price-30000" value="30000" />
+          <label for="price-30000">30000</label>
+        </div>
+        <p>Color</p>
+        <div class="color">
+          <input type="radio" name="color" id="color-silver" value="Silver" />
+          <label for="color-silver">Silver</label>
+
+          <input type="radio" name="color" id="color-white" value="White" />
+          <label for="color-white">White</label>
+
+          <input type="radio" name="color" id="color-black" value="Black" />
+          <label for="color-black">Black</label>
+
+          <input type="radio" name="color" id="color-blue" value="Blue" />
+          <label for="color-blue">Blue</label>
+
+          <input type="radio" name="color" id="color-red" value="Red" />
+          <label for="color-red">Red</label>
+
+          <input type="radio" name="color" id="color-gray" value="Gray" />
+          <label for="color-gray">Gray</label>
+
+          <input type="radio" name="color" id="color-green" value="Green" />
+          <label for="color-green">Green</label>
+        </div>
+      </div>
+      <div id="car-cards-container" class="car-cards-container">
+        <!-- product card location -->
+      </div>
+    </main>
+  </body>
+</html>
